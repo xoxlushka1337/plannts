@@ -12,8 +12,10 @@
     <header class="header">
       <div class="wrapper">
         <div class="header__logo">
-          <img src="imgs/icon/logo.ico.svg" alt="logo" class="header__icon" />
-          <a href="#" class="header__name">Plants</a>
+          <a href="#" class="header__name"
+            ><img src="imgs/icon/logo.ico.svg" alt="logo" class="header__icon" />
+            <span>Plants</span></a
+          >
         </div>
         <nav class="header__nav">
           <ul class="header__menu">
@@ -27,7 +29,23 @@
       </div>
     </header>
     <main class="main">
-      <section class="welcome"></section>
+      <section class="welcome">
+        <div class="wrapper">
+          <div class="layout-2-column">
+            <img src="imgs/Images/leafs.png" alt="leafs" class="welcome__img" />
+            <div class="welcome__content content">
+              <h1 class="welcome__title">We grow <span>plants</span> plants and give you oxygen</h1>
+              <p class="welcome__text text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s.
+              </p>
+              <div class="welcome__button">
+                <button class="button button_border">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="about"></section>
       <section class="service"></section>
       <section class="prices"></section>
