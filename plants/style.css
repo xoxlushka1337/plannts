@@ -212,9 +212,6 @@ body {
   letter-spacing: 0.3px;
   word-spacing: -3px;
 }
-
-.title {
-}
 .service__sorting {
   margin-left: 142px;
   margin-top: 29px;
@@ -231,7 +228,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.6px;
   color: #e06733;
   font-family: 'Inika', serif;
   background-color: #11ffee00;
@@ -246,7 +243,6 @@ body {
   width: 329px;
   height: 350px;
 }
-
 .service__content {
   display: flex;
   flex-wrap: wrap;
@@ -281,12 +277,13 @@ body {
   letter-spacing: 0.5px;
 }
 
+/* prices */
+
 .prices {
   font-family: 'Inter', sans-serif;
   margin-top: 40px;
   margin-bottom: 115px;
 }
-
 .prices__column {
   width: 332px;
   height: 391px;
@@ -305,6 +302,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
+  letter-spacing: 0.5px;
 }
 .prices__subtitle span {
   color: rgba(73, 154, 24, 1);
@@ -353,7 +351,7 @@ body {
   margin-top: 39px;
 }
 .prices__button {
-  margin-top: 38px;
+  margin-top: 40px;
   text-align: right;
 }
 
