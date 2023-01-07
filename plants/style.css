@@ -102,6 +102,8 @@ html {
   color: #e06733;
 }
 
+/* welcome */
+
 .welcome {
   padding-top: 76px;
   padding-bottom: 62px;
@@ -157,6 +159,9 @@ html {
   background-color: #e06733;
   transition: all 0.5s;
 }
+
+/* about */
+
 .about {
   margin-bottom: 87px;
 }
@@ -434,10 +439,6 @@ html {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.wrapper {
-}
-.layout-column {
-}
 .footer__text {
   margin-right: 17px;
 }
@@ -458,8 +459,6 @@ html {
   line-height: 50px;
   color: #000;
 }
-.footer__school {
-}
 .footer__icon {
   align-self: center;
   display: flex;
@@ -472,6 +471,4 @@ html {
 }
 .footer__icon :last-child {
   margin-right: 0px;
-}
-.tx {
 }
