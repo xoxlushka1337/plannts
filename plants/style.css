@@ -43,9 +43,9 @@ a:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-body {
-  /* font-family: 'Inika', serif;
-  font-family: 'Inter', sans-serif; */
+
+html {
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -64,7 +64,8 @@ body {
   max-width: 1220px;
   display: flex;
   justify-content: space-between;
-  padding: 42px 0;
+  padding-top: 42px;
+  padding-bottom: 28px;
   font-family: 'Inika', serif;
   font-size: 16px;
   font-weight: 400;
@@ -102,7 +103,7 @@ body {
 }
 
 .welcome {
-  padding-top: 62px;
+  padding-top: 76px;
   padding-bottom: 62px;
   background-color: #edf2ec;
 }
@@ -199,7 +200,7 @@ body {
 .service {
   background-color: #edf2ec;
   padding-top: 40px;
-  padding-bottom: 66px;
+  padding-bottom: 64px;
 }
 
 .service__header {
@@ -228,7 +229,6 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  letter-spacing: 0.6px;
   color: #e06733;
   font-family: 'Inika', serif;
   background-color: #11ffee00;
@@ -239,10 +239,7 @@ body {
   background-color: #e06733;
   transition: all 0.5s;
 }
-.service__img {
-  width: 329px;
-  height: 350px;
-}
+
 .service__content {
   display: flex;
   flex-wrap: wrap;
@@ -250,15 +247,21 @@ body {
 }
 
 .service__block {
-  border: 1px solid #e3e1d5;
-  border-radius: 20px;
   width: 330px;
   height: 450px;
   font-family: 'Inter', sans-serif;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
+}
+.service__img {
+  width: 329px;
+  height: 350px;
+  display: block;
 }
 .service__description {
   text-align: center;
+  border: 1px solid #e3e1d5;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
 }
 .service__subtitle {
   font-weight: 700;
@@ -266,7 +269,7 @@ body {
   line-height: 20px;
   color: #e06733;
   margin-bottom: 14px;
-  margin-top: 6px;
+  padding-top: 11px;
   letter-spacing: 0.5px;
 }
 .service__text {
@@ -275,6 +278,7 @@ body {
   line-height: 20px;
   color: #717171;
   letter-spacing: 0.5px;
+  padding-bottom: 35px;
 }
 
 /* prices */
@@ -282,7 +286,7 @@ body {
 .prices {
   font-family: 'Inter', sans-serif;
   margin-top: 40px;
-  margin-bottom: 115px;
+  margin-bottom: 111px;
 }
 .prices__column {
   width: 332px;
@@ -355,22 +359,25 @@ body {
   text-align: right;
 }
 
+/* contacts */
+
 .contacts {
   background: #edf2ec;
 }
-
 .contacts__title {
   font-weight: 700;
+  font-size: 42px;
   color: #499a18;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 61px;
+  margin-left: 37px;
+  letter-spacing: 0px;
 }
-
 .contacts__img {
   width: 400px;
   height: 497px;
   display: inline-block;
-  margin-top: 58px;
+  margin-top: 53px;
 }
 
 .contacts__form {
@@ -385,8 +392,8 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 40px;
-  letter-spacing: 0.05em;
   color: #717171;
+  letter-spacing: 1.5px;
   appearance: none;
   background-image: url('imgs/icon/contact_arrow.svg');
   background-position: 399px;
@@ -401,6 +408,7 @@ body {
   background-color: #c1e698;
   transition: all 0.3s;
 }
+
 .contacts__option {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -431,13 +439,18 @@ body {
 .layout-column {
 }
 .footer__text {
-  margin-right: 20px;
+  margin-right: 17px;
 }
 .footer__github {
   font-weight: 400;
   font-size: 20px;
   line-height: 50px;
   color: #000;
+  letter-spacing: 0.6px;
+}
+.footer__school {
+  margin-left: 18px;
+  letter-spacing: 0.5px;
 }
 .footer__link {
   font-weight: 400;
@@ -449,9 +462,13 @@ body {
 }
 .footer__icon {
   align-self: center;
+  display: flex;
 }
-.footer__icon img {
+.footer__icon li {
   margin-right: 20px;
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
 }
 .footer__icon :last-child {
   margin-right: 0px;
