@@ -420,8 +420,7 @@
     font-size: 15px;
     line-height: 20px;
   }
-  /* .service__button {
-  } */
+
   .service__button:last-child {
     margin-top: 9px;
   }
@@ -449,6 +448,8 @@
     word-spacing: -1px;
   }
 
+  /* prices */
+
   .prices {
     margin-top: 24px;
     margin-bottom: 40px;
@@ -463,16 +464,31 @@
     text-align: center;
     margin-bottom: 35px;
   }
+  .prices__lining {
+    margin-bottom: 14px;
+  }
+
   .prices__accordion {
     width: 224px;
-    height: 235px;
     margin: 0 auto;
-    padding: 28px 0px;
+    padding: 28px 0px 15px;
   }
   .prices__content {
     width: 180px;
     height: 49.72px;
     padding: 16px 40px 16px 31px;
+  }
+  .open .prices__content_hidden {
+    width: 180px;
+    padding: 0px 30px 6px;
+  }
+  .prices__line:after {
+    content: '';
+    background-color: #aea1a1;
+    height: 1px;
+    display: block;
+    margin-top: -8px;
+    width: 120px;
   }
   .prices__item {
     font-size: 15px;
