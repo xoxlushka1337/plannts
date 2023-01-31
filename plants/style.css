@@ -235,7 +235,10 @@ html {
   color: #ffffff;
   background-color: #e06733;
 }
-
+.service-blur {
+  filter: blur(2px);
+  transition: all 0.5s;
+}
 .service__content {
   display: flex;
   flex-wrap: wrap;
@@ -528,7 +531,4 @@ html {
 }
 .footer__icon :last-child {
   margin-right: 0px;
-}
-.hide {
-  filter: blur(2px);
 }

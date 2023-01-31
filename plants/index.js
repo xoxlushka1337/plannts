@@ -23,7 +23,7 @@ document.addEventListener('click', function () {
   closeSidebar();
 });
 
-//service button
+//service filter button
 
 function app() {
   const buttonsService = document.querySelectorAll('.service__button');
@@ -49,7 +49,6 @@ function app() {
         card.classList.remove('hide');
       });
 
-      // buttonsService.forEach((btn) => btn.classList.remove('button-actice'));
       for (let i = 0; i < buttonsService.length; i++) {
         buttonsService[i].classList.remove('button-active');
       }
@@ -58,10 +57,10 @@ function app() {
 
   function setBlur(cards) {
     cards.forEach((card) => {
-      card.classList.add('hide');
+      card.classList.add('service-blur');
 
       if (visibleCategory.includes(card.classList[1])) {
-        card.classList.remove('hide');
+        card.classList.remove('service-blur');
       }
     });
   }
