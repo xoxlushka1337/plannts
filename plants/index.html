@@ -251,17 +251,22 @@
           <div class="layout-column contacts__layout">
             <img src="imgs/Images/contact_woman.png" alt="woman" class="contacts__img" />
             <h2 class="contacts__title title">Contact us</h2>
-            <form action="#" class="contacts__form">
-              <p>
-                <select name="city" class="contacts__list">
-                  <option class="contacts__option" value="City" selected hidden>City</option>
-                  <option class="contacts__option" value="Canandaigua, NY">Canandaigua, NY</option>
-                  <option class="contacts__option" value="New York City">New York City</option>
-                  <option class="contacts__option" value="Yonkers, NY">Yonkers, NY</option>
-                  <option class="contacts__option" value="Sherrill, NY">Sherrill, NY</option>
-                </select>
-              </p>
-            </form>
+            <div class="contacts__dropdown">
+            <div class="contacts__form">
+              <button class="contacts__select">City</button>
+              <ul class="contacts__list">
+                <div class="contacts__docket">
+                <li class="contacts__list--item" data-value="Canandaigua">Canandaigua, NY</li>
+                <li class="contacts__list--item" data-value="NY">New York City</li>
+                <li class="contacts__list--item" data-value="Yonkers">Yonkers, NY</li>
+                <li class="contacts__list--item" data-value="Sherrill">Sherrill, NY</li>
+              </div>
+              </ul>
+              <input type="text" name="select-categoty" value="" class="contacts__input" />
+            </div>
+            <div class="contacts__card1"></div>
+          </div>
+            </div>
           </div>
         </div>
       </section>
@@ -291,7 +296,7 @@
             </li>
             <li>
               <a href="https://github.com/xoxlushka1337"
-                ><img src="imgs/icon/tw.svg" alt="twitter"
+                ><img  src="imgs/icon/tw.svg" alt="twitter"
               /></a>
             </li>
             <li>
@@ -300,9 +305,14 @@
               /></a>
             </li>
           </ul>
+          
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
+
+    <script src="js/filter.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>

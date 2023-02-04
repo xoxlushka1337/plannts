@@ -362,6 +362,7 @@ html {
 .prices__content_hidden {
   display: none;
 }
+
 .open .prices__content_hidden {
   display: block;
   padding: 0px 40px 0px;
@@ -408,6 +409,9 @@ html {
   background-color: #fff;
   cursor: pointer;
 }
+.prices__link:hover {
+  color: #e06733;
+}
 .prices__link {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -429,6 +433,7 @@ html {
 /* contacts */
 
 .contacts {
+  font-family: 'Inter', sans-serif;
   background: #edf2ec;
 }
 .contacts__title {
@@ -450,7 +455,7 @@ html {
 .contacts__form {
   margin-top: 148px;
 }
-.contacts__list {
+.contacts__select {
   background-color: #d6e7d2;
   border: none;
   width: 450px;
@@ -461,38 +466,123 @@ html {
   line-height: 40px;
   color: #717171;
   letter-spacing: 1.5px;
-  appearance: none;
   background-image: url('imgs/icon/contact_arrow.svg');
   background-position: 399px;
   background-repeat: no-repeat;
   padding-right: 20px;
   padding-left: 20px;
   cursor: pointer;
+  text-align: left;
 }
-.contacts__list:hover {
+.contacts__select:hover {
   background-image: url('imgs/icon/contact_arrow2.svg');
   background-repeat: no-repeat;
   background-color: #c1e698;
   transition: all 0.3s;
 }
+.contacts__select:focus,
+.contacts__select--active {
+  background-color: #c1e698;
+  transition: all 0.3s;
+  box-shadow: none;
+}
 
-.contacts__option {
-  font-family: 'Inter', sans-serif;
+.contacts__list {
+  display: none;
+  background-color: #dce9d9;
+  list-style: none;
+  color: #499a18;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
-  color: #499a18;
   letter-spacing: 0.05em;
-  border: none;
+  width: 450px;
 }
-.contacts__option:hover {
-  background-color: #dce9d9;
+.contacts__docket {
+  padding-top: 27px;
+  padding-bottom: 23px;
 }
-.option--hidden {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
+.contacts__list--visible {
+  display: block;
+}
+.contacts__list--item {
+  border-bottom: 1px solid #d9d9d9;
+  width: 410px;
+  margin-left: 20px;
+  padding-left: 6px;
+  display: inline-block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.contacts__list--item:hover {
   color: #717171;
+  border-bottom: 1px solid #717171;
+  transition: all 0.5s;
+}
+
+.contacts__input {
+  display: none;
+}
+.contacts__dropdown {
+  position: relative;
+}
+.contacts__card1 {
+  /* position: absolute; */
+  width: 448px;
+}
+.contacts__card {
+  margin-top: 47px;
+  padding-top: 17px;
+  border: #000000 solid 1px;
+  border-radius: 20px;
+  background: #edf2ec;
+  width: 448px;
+  height: 214px;
+  opacity: 0;
+  animation: ani 1s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contacts__inform {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+}
+.contacts__column1 {
+  padding-left: 33px;
+}
+.contacts__column2 {
+  margin-left: 10px;
+}
+
+.contacts__text {
+  color: #717171;
+}
+
+.contacts__call {
+  text-align: center;
+  margin-top: 19px;
+}
+.contacts__call-a {
+  color: #717171;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  border: #e06733 solid 1px;
+  border-radius: 5px;
+  padding: 4px 43px;
+}
+.contacts__call-a:hover {
+  color: #e06733;
 }
 
 /* footer */
@@ -519,10 +609,21 @@ html {
   line-height: 50px;
   color: #000;
 }
+.footer__github:hover {
+  transform: scale(1.1);
+}
+
+.footer__school:hover {
+  transform: scale(1.1);
+}
 .footer__icon {
   align-self: center;
   display: flex;
 }
+.footer__icon li:hover {
+  transform: scale(1.1);
+}
+
 .footer__icon li {
   margin-right: 20px;
   width: 32px;
