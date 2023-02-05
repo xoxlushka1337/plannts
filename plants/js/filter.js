@@ -21,7 +21,7 @@ function app() {
     if (visibleCategory.length === 0 || visibleCategory.length > 2) {
       visibleCategory.length = 0;
       cards.forEach((card) => {
-        card.classList.remove('hide');
+        card.classList.remove('service-blur');
       });
 
       for (let i = 0; i < buttonsService.length; i++) {

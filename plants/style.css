@@ -225,6 +225,7 @@ html {
   font-family: 'Inika', serif;
   background-color: #11ffee00;
   cursor: pointer;
+  transition: all px;
 }
 .button:hover {
   color: #ffffff;
@@ -234,6 +235,7 @@ html {
 .button-active {
   color: #ffffff;
   background-color: #e06733;
+  transition: all 0.5s;
 }
 .service-blur {
   filter: blur(2px);
@@ -354,6 +356,7 @@ html {
   background: url(imgs/icon/accordion-arrow.svg) no-repeat;
   align-self: center;
   cursor: pointer;
+  transition: all 0.3 ease-out;
 }
 .open .prices__icon {
   background: url(imgs/icon/accordion_arrow2.svg) no-repeat;
@@ -371,6 +374,7 @@ html {
   border-radius: 0px 0px 20px 20px;
   padding-bottom: 12px;
   width: 250px;
+  animation: appearance 0.5s forwards;
 }
 
 .prices__line:after {
@@ -489,6 +493,7 @@ html {
 
 .contacts__list {
   display: none;
+  transition: all 0.3s ease-in-out;
   background-color: #dce9d9;
   list-style: none;
   color: #499a18;
@@ -504,6 +509,15 @@ html {
 }
 .contacts__list--visible {
   display: block;
+  animation: appearance 0.6s forwards;
+}
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .contacts__list--item {
   border-bottom: 1px solid #d9d9d9;
@@ -513,6 +527,7 @@ html {
   display: inline-block;
   margin-bottom: 8px;
   cursor: pointer;
+  line-height: 35px;
 }
 .contacts__list--item:hover {
   color: #717171;
@@ -527,7 +542,6 @@ html {
   position: relative;
 }
 .contacts__card1 {
-  /* position: absolute; */
   width: 448px;
 }
 .contacts__card {
@@ -539,17 +553,9 @@ html {
   width: 448px;
   height: 214px;
   opacity: 0;
-  animation: ani 1s forwards;
+  animation: appearance 1s forwards;
 }
 
-@keyframes ani {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .contacts__inform {
   display: flex;
   font-weight: 400;
